@@ -1,6 +1,6 @@
 [http]
 host = "0.0.0.0"
-port = 6004
+port = 80
 # Whether the server is behind a reverse proxy, like NGINX
 proxying = false
 # IPs allowed to access the server in proxy mode.
@@ -9,7 +9,7 @@ proxyAllowedIps = ["127.0.0.1"]
 # Whether the Origin header check is enabled.
 origin = false
 # Origins to accept connections from.
-originAllowedDomains = ["computernewb.com"]
+originAllowedDomains = ["gjhkyiovm.mooo.com"]
 
 [geoip]
 # Enables support for showing country flags next to usernames.
@@ -52,7 +52,7 @@ type = "qemu"
 # QEMU options
 # Only used if vm.type is set to "qemu"
 [qemu]
-qemuArgs = "qemu-system-x86_64"
+qemuArgs = "qemu-system-ppc"
 # VNC port to be used for this VM. Must be unique among all VMs. Only used on Windows, as unix sockets are used on Linux.
 vncPort = 5900
 snapshots = true
@@ -99,7 +99,7 @@ enabled = false
 host = "127.0.0.1"
 username = "root"
 password = "hunter2"
-database = "cvmts"
+database = "gvmts"
 
 # This section configures banning users. Note that if you leave this default, banning will NOT function and will be as effective as a kick.
 [bans]
@@ -112,11 +112,11 @@ cvmban = false
 [collabvm]
 # Node ID for this server
 # Make sure this is unique among all the other nodes in a webapp
-node = "acoolvm"
+node = "gjhkyiovm"
 # HTML display name shown on the VM list
-displayname = "A <b>Really</b> Cool CollabVM Instance"
+displayname = "GjhkyioVM"
 # HTML message shown in the chat when a user joins
-motd = "welcome!"
+motd = "Welcome to GjhkyioVM!"
 # Maximum amount of active connections allowed from the same IP.
 maxConnections = 3
 # Moderator rank enabled (permissions are defined below)
